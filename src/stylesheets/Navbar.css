@@ -1,41 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
 
-.navbar {
-    width: 100vw;
-    font-family: 'Fira Sans', sans-serif; 
-    background: transparent;
+.App {
+  position: relative;
+  background-image: url('../assets/HeroBanner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  background-position: top;
+  height: 700px;
 }
 
-.navbar .navbar-expand-lg .container {
-    background: transparent;
+.top-bar{
+  position: absolute;
+  top:3%;
+}
+
+.hero-container {
+height: 700px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+background-attachment:local;
+}
+
+.navbar {
+  position: relative;
+  width: 100vw;
+  font-family: 'Fira Sans', sans-serif;
+  background: transparent;
+  z-index: 1;
 }
 
 .navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-    background: transparent;
+  display: flex !important;
+  flex-basis: auto;
+  background: transparent;
+  padding: 0;
 }
 
-.navbar img{
-    background: transparent;
+.navbar img {
+  background: transparent;
 }
 
-.navbar select{
-    padding: 8px 20px;
-    margin-right: 20px;
-    background-color: #464646;
-    border: 2px solid #ffffff;
-    border-radius: 6px;
-    color: #fff;
+.navbar select {
+  padding: 8px 20px;
+  margin-right: 20px;
+  background-color: #464646;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  color: #fff;
 }
 
-.navbar .btn{
-    background-color: red;
-       padding: 8px 20px;
-       color: #fff;
-          font-weight: bold;
+.navbar .btn {
+  background-color: red;
+  padding: 8px 20px;
+  color: #fff;
+  font-weight: bold;
 }
 
-.navbar .btn:hover{
-    background-color: rgb(196, 0, 0);
+.navbar .btn:hover {
+  background-color: rgb(196, 0, 0);
 }
