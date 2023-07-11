@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import HeroText from './HeroText'
 import '../stylesheets/HeroSection.css'
 import Logo from '../assets/netflixlogo.png'
 import { Link } from 'react-router-dom';
@@ -43,7 +43,9 @@ function HeroSection() {
           </nav>
         </div>
       </div>
-
+      <div className='banner'>
+              <HeroText />
+        </div>
     </div>
   )
 }
