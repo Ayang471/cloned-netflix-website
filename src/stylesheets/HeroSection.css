@@ -1,0 +1,14 @@
+.hero-section{
+    position: relative;
+  background-image: url('../assets/HeroBanner.png');
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  background-position: top;
+  height: 700px;
+}
+
+.hero-section .banner{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 70%);
+    background-attachment:local;
+}
