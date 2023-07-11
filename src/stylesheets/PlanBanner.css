@@ -1,0 +1,52 @@
+.PlanBanner {
+    background-color: black;
+    position: relative;
+}
+
+.PlanBanner .container{
+    display: flex;
+    justify-content: center;
+background: radial-gradient(
+  51.39% 511.66% at 47.68% -217.91%,
+  #ff9900 0%,
+  #f91520 26.27%,
+  #17255d 79.44%,
+  #0b183f 100%
+);
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: white;
+    padding: 22px;
+}
+
+.PlanBanner .center-text{
+    background: transparent;
+    text-align: left;
+}
+
+.PlanBanner img{
+    display: block;
+    background: transparent;
+    margin-right: 14px;
+}
+
+.PlanBanner h2{
+    font-size: 20px;
+    color: #fff;
+    background: transparent;
+}
+
+.PlanBanner p{
+    font-size: 16px;
+    color: #fff;
+        background: transparent;
+        font-weight: semibold;
+}
+
+.PlanBanner a{
+    border: none;
+    background-color: none;
+    font-weight: 500;
+        background: transparent;
+color: #458DF3;
+}
