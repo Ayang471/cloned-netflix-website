@@ -1,0 +1,48 @@
+.footer{
+    padding: 6% 0;
+    background-color: black;
+   border-top: 6px solid #232323;
+}
+
+.footer .flex-container{
+    margin: auto 10%;
+    padding: 0;
+}
+
+.footer .customer-number{
+    text-align: left;
+    color: #BBBBBB;
+
+}
+
+.footer ul{
+    list-style: none;
+    text-align: left;
+    padding: 12px 0;
+}
+
+.footer ul li a{
+    color: #BBBBBB;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.footer .language {
+   margin-left: 5%;
+}
+
+.footer .language select{
+    padding: 8px 20px;
+    background-color: #464646;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+.footer .flex-container .row {
+    display: flex;
+    flex-direction: row;
+}
+}
