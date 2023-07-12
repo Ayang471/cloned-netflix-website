@@ -1,0 +1,198 @@
+.ListofOptions{
+    background-color: black;
+    color: #fff;
+    border-bottom: 3px solid #656565;
+}
+
+
+.ListofOptions .row{
+align-items: center;
+}
+
+
+{/*TV section*/}
+.TV-Section{
+  padding:0% 14% 3% 14%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+      border-bottom: 3px solid #656565;
+}
+
+.TV-Section .row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.TV-Section .row .col{
+    flex: 1;
+}
+
+.TV-Section .col h1{
+  font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    text-align: left;
+}
+
+.TV-Section .col p{
+     font-size: 26px;
+     text-align: left;
+}
+
+.TV-Section .row .col img{
+    width: 500px;
+}
+
+
+{/*watch everywhere*/}
+.watch-everywhere{
+    padding:4% 10%;
+      display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+      border-bottom: 3px solid #656565;
+}
+
+.watch-everywhere .row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.watch-everywhere .row .col{
+    flex: 1;
+}
+
+.watch-everywhere .col h1{
+  font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    text-align: left;
+}
+
+.watch-everywhere .col p{
+     font-size: 26px;
+     text-align: left;
+}
+
+.watch-everywhere .row .col img{
+    width: 500px;
+}
+
+
+{/*Kids profile*/}
+.Kids-Profiles{
+    padding:4% 10%;
+      display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+      border-bottom: 3px solid #656565;
+}
+
+.Kids-Profiles .row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Kids-Profiles .row .col{
+    flex: 1;
+}
+
+.Kids-Profiles .col h1{
+  font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    text-align: left;
+}
+
+.Kids-Profiles .col p{
+     font-size: 26px;
+     text-align: left;
+}
+
+.Kids-Profiles .row .col img{
+    width: 500px;
+}
+
+{/*Download Section*/}
+.download{
+    padding:4% 10%;
+      display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+      border-bottom: 3px solid #656565;
+}
+
+.download .row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.download .row .col{
+    flex: 1;
+}
+
+.download .col h1{
+  font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+    text-align: left;
+}
+
+.download .col p{
+     font-size: 26px;
+     text-align: left;
+}
+
+.download .row .col img{
+    width: 500px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+   .row .col .text h1{
+     font-size: 32px;
+     text-align: center;
+     padding-bottom: 0;
+
+  }
+
+    .col .text p{
+         font-size: 22px;
+         text-align: center;
+           padding-bottom: 0;
+    }
+
+    .watch-everywhere .col:first-child {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  
+      .download .col:first-child {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
