@@ -1,23 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
 
- {/*.App {
-  position: relative;
-  background-image: url('./assets/HeroBanner.png');
-   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: local;
-  background-position: top;
-  height: 700px;
-}
-
-.top-bar{
-  position: absolute;
-  top:5%;
-}*/}
-
 .hero-container {
 height: 700px;
-background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.7) 100%);
+background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.8) 100%);
 background-attachment:local;
 }
 
@@ -58,3 +43,4 @@ background-attachment:local;
 .navbar .btn:hover {
   background-color: rgb(196, 0, 0);
 }
+
