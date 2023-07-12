@@ -1,0 +1,54 @@
+.sign-in-form-footer{
+    padding: 3% 0;
+ background:rgba(0, 0, 0, 0.6);
+     font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+.sign-in-form-footer .flex-container{
+    margin: auto 10%;
+    padding: 0;
+}
+
+.sign-in-form-footer .customer-number{
+    text-align: left;
+    color: #BBBBBB;
+
+}
+
+.sign-in-form-footer  .flex-container p{
+    font-size: 22px;
+      padding: 12px;
+}
+
+.sign-in-form-footer ul{
+    list-style: none;
+    text-align: left;
+    padding: 12px;
+}
+
+.sign-in-form-footer ul li a{
+    color: #BBBBBB;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: regular04;
+}
+
+.sign-in-form-footer .language {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.sign-in-form-footer .language select{
+    padding: 8px 20px;
+    background-color: #464646;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+.sign-in-form-footer .flex-container .row {
+    display: flex;
+    flex-direction: row;
+}
+}
