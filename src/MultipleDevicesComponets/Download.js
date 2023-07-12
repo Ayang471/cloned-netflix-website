@@ -6,17 +6,19 @@ import mobile from '../assets/mobile.png'
 function Download() {
     return (
         <div className='download'>
-            <section className='row'>
-                <div className='col'>
-                    <img src={mobile} alt='devices' />
+            <div className='container'>
+                <div className='row'>
+                    <div className='col'>
+                        <img className='image' src={mobile} alt='devices' />
+                    </div>
+                    <div className='col'>
+                        <div className='text'>
+                            <h1>Download your shows to watch offline</h1>
+                            <p>Only available on ad-free plans.</p>
+                        </div>
+                    </div>
                 </div>
-                <div className='col text'>
-                    <h1>Download your shows to watch offline</h1>
-                    <p>Only available on ad-free plans.</p>
-                </div>
-            </section>
-          {/*  <Accordions />
-            <Footer /> */}
+            </div>
         </div>
     )
 }
