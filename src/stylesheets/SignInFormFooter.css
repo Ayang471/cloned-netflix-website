@@ -23,19 +23,18 @@
 .sign-in-form-footer ul{
     list-style: none;
     text-align: left;
-    padding: 12px;
+    padding: 0 4px;
 }
 
 .sign-in-form-footer ul li a{
     color: #BBBBBB;
     font-size: 14px;
     letter-spacing: 1px;
-    font-weight: regular04;
+    font-weight: regular;
 }
 
 .sign-in-form-footer .language {
-    text-align: left;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .sign-in-form-footer .language select{
