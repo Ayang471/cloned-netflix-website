@@ -4,7 +4,6 @@ import PlanBanner from '../components/PlanBanner'
 import Accordions from '../AccordionsComponents/Accordions'
 import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
-//import MultiDevices from '../MultipleDevicesComponets/MultiDevices'
 
 
 function MainPage() {
