@@ -1,6 +1,5 @@
 .PlanBanner {
     background-color: black;
-    position: relative;
 }
 
 .PlanBanner .container{
@@ -14,39 +13,81 @@ background: radial-gradient(
   #0b183f 100%
 );
     box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
+    transform: translateY(-50%);
+    border-radius: 4px;
     color: white;
     padding: 22px;
 }
 
 .PlanBanner .center-text{
-    background: transparent;
     text-align: left;
 }
 
 .PlanBanner img{
     display: block;
-    background: transparent;
-    margin-right: 14px;
 }
 
 .PlanBanner h2{
-    font-size: 20px;
+    font-size: 22px;
     color: #fff;
-    background: transparent;
+     font-weight: bold;
 }
 
 .PlanBanner p{
-    font-size: 16px;
+    width: 350px;
+    font-size: 18px;
     color: #fff;
-        background: transparent;
         font-weight: semibold;
+        padding: 0;
 }
 
 .PlanBanner a{
     border: none;
     background-color: none;
     font-weight: 500;
-        background: transparent;
 color: #458DF3;
+}
+
+
+@media (max-width: 391px) {
+
+.PlanBanner .container{
+    padding: 30px;
+}
+
+.PlanBanner .center-text{
+    text-align: left;
+}
+
+.PlanBanner img{
+    transform: scale(1);
+    margin-top: -90px;
+    margin-left: 30px;
+    padding-bottom: 5%;
+}
+
+.PlanBanner h2{
+    font-size: 22px;
+    color: #fff;
+     font-weight: bold;
+     padding-left: 6%;
+}
+
+.PlanBanner p{
+    width: 350px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: semibold;
+    padding-left: 6%;   
+}
+
+.PlanBanner a{
+    border: none;
+    background-color: none;
+    font-weight: 500;
+    color: #458DF3;
+    padding-left: 6%;   
+}
+
+   
 }
