@@ -1,0 +1,59 @@
+
+.subscription .P2{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+
+}
+
+.Form{
+  background: transparent;
+  margin-bottom: 3%;
+}
+
+.Form .userEmail{
+    width: 350px;
+    padding: 12px 22px;
+    border-radius: 4px;
+    border: 1px solid #d5d3d3;
+    background-color: rgba(47, 47, 47, 0.6);
+    margin-right: 12px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.userEmail{
+    background: transparent;
+}
+
+.Form .userEmail::placeholder{
+    color: #c6c6c6;
+}
+
+.Form .btn{
+    padding: 10px 24px;
+    background-color: red;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.Form .btn:hover{
+  background-color: rgb(196, 0, 0);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .Form .userEmail{
+    width: 300px;
+    margin-bottom: 6%;
+}
+.Form .btn{
+  font-size: 20px;
+    padding: 10px 20px;
+    margin-bottom: 10%;
+}
+}
