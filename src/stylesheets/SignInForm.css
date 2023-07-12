@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+
+
+.SignIn-form{
+    font-family: 'Fira Sans', sans-serif;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/HeroBanner.png');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.form-box{
+    margin: 0 auto;
+    background-color: rgba(20, 20, 20, 0.7);
+    padding: 4% 5%;
+    border-radius: 10px;
+}
+
+.form-box h1{
+    color: #fff;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.form-box .inputField{
+width: 350px;
+padding: 14px 18px;
+margin-bottom: 3%;
+border-radius: 6px;
+}
+
+.form-box .inputField:focus{
+    background-color: #666666;
+    color: #fff;
+}
+.form-box .inputField:focus::placeholder{
+    color: #fff;
+}
+
+
+.form-box .inputField::placeholder{
+color: rgb(46, 46, 46);
+}
+
+.form-box .form-button{
+  width: 350px;
+padding: 14px 18px;
+margin-top: 10%;
+border-radius: 6px;
+border: none;
+ background-color: rgb(196, 0, 0);
+ color: #fff;
+ font-size: 18px;
+}
+
+.form-box  .errorMessage{
+    color: #fff;
+}
+
+
+.form-box .help-section{
+    margin-top: 10px;
+}
+
+.form-box .help-section .row {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     color: rgb(186, 186, 186);
+     margin: 0;
+}
+
+.form-box .help-section .row a{
+      color: rgb(186, 186, 186);
+      text-align: right;
+      padding-left: 68px;
+}
+
+.form-box .help-section .row a:hover{
+     text-decoration: underline;
+}
+
+.form-box .bottom-section{
+    margin-top: 24%;
+}
+
+.form-box .bottom-section p{
+    color: rgb(186, 186, 186);
+    font-size: 20px;
+}
+
+.form-box .bottom-section .new{
+      font-size: 16px;
+}
+
+.form-box .bottom-section a{
+    color: #fff;
+    margin-left: 8px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.form-box .bottom-section a:hover{
+    text-decoration: underline;
+}
+
+.form-box .bottom-section .protected{
+    font-size: 14px;
+   margin: 0 auto;
+   padding: 0;
+}
+
+
+.form-box .bottom-section .learn-more{
+    color: rgb(55, 55, 255);
+}
+
+@media (max-width: 768px){
+
+     .SignIn-form .navbar .container img{
+        width: 100px;
+        margin: 16%;
+     }
+
+    .SignIn-form{
+        background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    }
+       .SignIn-form .navbar .container .btn{
+        margin:16px;
+       }
+
+.form-box .inputField::placeholder{
+color: rgb(46, 46, 46);
+}
+
+.form-box .form-button{
+  width: 350px;
+padding: 14px 18px;
+margin-top: 10%;
+border-radius: 6px;
+border: none;
+ background-color: rgb(196, 0, 0);
+ color: #fff;
+ font-size: 18px;
+}
+
+.form-box .help-section{
+    color: rgb(186, 186, 186);
+    }
+
+.form-box .help-section .row .col{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     align-items: stretch;
+}
+
+.form-box .help-section .row .Needhelp{
+     color: rgb(186, 186, 186);
+     text-decoration: none;
+}
+
+.form-box .help-section .row .Needhelp:hover{
+     text-decoration: underline;
+}
+
+.form-box .bottom-section{
+    text-align: left;
+    margin-left: 8px;
+}
+
+
+}
