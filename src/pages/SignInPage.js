@@ -1,4 +1,4 @@
-import React  from 'react'
+import React, { useState }  from 'react'
 import SignInForm from '../SignInComponents/SignInForm'
 import '../stylesheets/SignInForm.css'
 import Logo from '../assets/netflixlogo.png'
@@ -7,7 +7,10 @@ import { Hide } from '@chakra-ui/react'
 import SignInFormFooter from '../components/SignInFormFooter';
 import LanguageComponent from '../LanguageComponent';
 
+
 function SignInPage() {
+  const [signedIn, setSignedIn] = useState(false)
+
   return (
     <div className='SignIn-form'>
       <div className="navbar">
@@ -29,8 +32,8 @@ function SignInPage() {
               <Hide breakpoint='(max-width: 482px)'>
                 <LanguageComponent />
             </Hide>
-            <Link to="/SignInPage" className="btn">
-              Sign In
+                <Link to="/SignInPage" className="btn" >
+               { signedIn ? "sign out" : "sign in"}
             </Link>
           </div>
       </div>

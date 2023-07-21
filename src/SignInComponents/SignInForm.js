@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../stylesheets/SignInForm.css'
 import { Formik, Field } from "formik";
 import { Box, Button, Checkbox, Flex, FormControl, FormLabel, FormErrorMessage, Input, VStack, } from '@chakra-ui/react'
-
+import { Context } from '../ContextBtn'
 
 function SignInForm() {
+  const [signedIn, setSignedIn] = useContext(Context)
+
   return (
+    <Context.Provider value={[signedIn, setSignedIn]}>
     <div className='signin-form'>
       <Flex className='signin-container' align="center" justify="center" h="100vh">
         <Box className="form-box">
@@ -30,41 +33,41 @@ function SignInForm() {
                 <VStack spacing={4} align="flex-start">
                   <FormControl className='formbox'>
                     <FormLabel htmlFor="email" className="form-text">
-                    <Field
-                      className='inputField'
-                      as={Input}
-                      id="email"
-                      name="email"
-                      type="email"
-                      variant="filled"
-                      placeholder="email or phone number"
-                    />
+                      <Field
+                        className='inputField'
+                        as={Input}
+                        id="email"
+                        name="email"
+                        type="email"
+                        variant="filled"
+                        placeholder="email or phone number"
+                      />
                     </FormLabel>
                   </FormControl>
                   <FormControl isInvalid={!!errors.password && touched.password}>
                     { }
                     <FormLabel htmlFor="password" className="form-text">
-                    <Field
-                      className='inputField'
-                      as={Input}
-                      id="password"
-                      name="password"
-                      type="password"
-                      variant="filled"
-                      placeholder="password"
-                      validate={(value) => {
-                        let error;
-                        if (value.length < 6) {
-                          error = "Password must contain at least 6 characters";
-                        }
-                        return error;
-                      }}
-                    />
+                      <Field
+                        className='inputField'
+                        as={Input}
+                        id="password"
+                        name="password"
+                        type="password"
+                        variant="filled"
+                        placeholder="password"
+                        validate={(value) => {
+                          let error;
+                          if (value.length < 6) {
+                            error = "Password must contain at least 6 characters";
+                          }
+                          return error;
+                        }}
+                      />
                     </FormLabel>
                     <FormErrorMessage><p className='errorMessage'>{errors.password}</p></FormErrorMessage>
                   </FormControl>
-                  <Button type="submit" width="full" className="form-button">
-                    Sign In
+                  <Button type="submit" width="full" className="form-button" onClick={() => setSignedIn(!signedIn)}>
+                    { signedIn ? "sign out" : "sign in"}
                   </Button>
                 </VStack>
                 <div className='help-section'>
@@ -76,7 +79,7 @@ function SignInForm() {
                           id="rememberMe"
                           name="rememberMe"
                         >
-                            <label for="check"> Remember Me</label> 
+                          <label for="check"> Remember Me</label>
                         </Field>
                       </div>
                     </div>
@@ -93,11 +96,12 @@ function SignInForm() {
               <a href="/">Sign Up now.</a>
             </p>
             <p className='protected'>This page is protected by Google reCAPTCHA  to<br />
-             ensure you're not a bot. <a href="/" className='learn-more'>Learn more.</a></p>
+              ensure you're not a bot. <a href="/" className='learn-more'>Learn more.</a></p>
           </div>
         </Box>
       </Flex>
     </div>
+    </Context.Provider>
   )
 }
 

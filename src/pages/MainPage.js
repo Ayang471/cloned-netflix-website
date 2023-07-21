@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 
 
+
 function MainPage() {
   return (
     <div className='main-page'>
