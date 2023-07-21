@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HeroText from './HeroText'
 import '../stylesheets/HeroSection.css'
 import Logo from '../assets/netflixlogo.png'
 import { Link } from 'react-router-dom';
 import { Hide } from '@chakra-ui/react'
 import LanguageComponent from '../LanguageComponent';
-
+import { Context } from '../ContextBtn'
 
 
 function HeroSection() {
+  const [signedIn, setSignedIn] = useState(true)
+  
   return (
     <div className='hero-section'>
       <div className='hero-container'>
@@ -21,7 +23,7 @@ function HeroSection() {
                    <LanguageComponent />
                 </Hide>
                 <Link to="/SignInPage" className="btn">
-                  Sign In
+                { signedIn? 'Sign in' : ' Sign out'}
                 </Link>
               </div>
             </div>
