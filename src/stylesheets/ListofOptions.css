@@ -1,7 +1,7 @@
 .ListofOptions{
     background-color: black;
     color: #fff;
-    border-bottom: 3px solid #656565;
+    border-bottom: 6px solid rgb(35,35,35);
 }
 
 
@@ -18,7 +18,7 @@ align-items: center;
   align-items: center;
   justify-content: center;
   text-align: center;
-      border-bottom: 3px solid #656565;
+      border-bottom: 6px solid rgb(35,35,35);
 }
 
 .TV-Section .row{
@@ -58,7 +58,7 @@ align-items: center;
   align-items: center;
   justify-content: center;
   text-align: center;
-      border-bottom: 3px solid #656565;
+      border-bottom: 6px solid rgb(35,35,35);
 }
 
 .watch-everywhere .row{
@@ -98,7 +98,7 @@ align-items: center;
   align-items: center;
   justify-content: center;
   text-align: center;
-      border-bottom: 3px solid #656565;
+    border-bottom: 6px solid rgb(35,35,35);
 }
 
 .Kids-Profiles .row{
@@ -137,7 +137,7 @@ align-items: center;
   align-items: center;
   justify-content: center;
   text-align: center;
-      border-bottom: 3px solid #656565;
+  border-bottom: 2px solid rgb(35,35,35);
 }
 
 .download .row{

@@ -3,6 +3,7 @@
 }
 
 .PlanBanner .container{
+      width: 100%;
     display: flex;
     justify-content: center;
 background: radial-gradient(
@@ -16,7 +17,8 @@ background: radial-gradient(
     transform: translateY(-50%);
     border-radius: 4px;
     color: white;
-    padding: 22px;
+    padding: 18px 14px;
+    margin: 0 auto;
 }
 
 .PlanBanner .center-text{
@@ -51,17 +53,13 @@ color: #458DF3;
 
 @media (max-width: 391px) {
 
-.PlanBanner .container{
-    padding: 30px;
-}
-
 .PlanBanner .center-text{
     text-align: left;
 }
 
 .PlanBanner img{
     transform: scale(1);
-    margin-top: -90px;
+    margin-top: -80px;
     margin-left: 30px;
     padding-bottom: 5%;
 }
