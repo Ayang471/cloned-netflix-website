@@ -1,4 +1,4 @@
-import React, { useState }  from 'react'
+import React from 'react'
 import SignInForm from '../SignInComponents/SignInForm'
 import '../stylesheets/SignInForm.css'
 import Logo from '../assets/netflixlogo.png'
@@ -9,7 +9,6 @@ import LanguageComponent from '../LanguageComponent';
 
 
 function SignInPage() {
-  const [signedIn, setSignedIn] = useState(false)
 
   return (
     <div className='SignIn-form'>
@@ -33,7 +32,7 @@ function SignInPage() {
                 <LanguageComponent />
             </Hide>
                 <Link to="/SignInPage" className="btn" >
-               { signedIn ? "sign out" : "sign in"}
+              Sign In
             </Link>
           </div>
       </div>

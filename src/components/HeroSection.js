@@ -1,16 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import HeroText from './HeroText'
 import '../stylesheets/HeroSection.css'
 import Logo from '../assets/netflixlogo.png'
 import { Link } from 'react-router-dom';
 import { Hide } from '@chakra-ui/react'
 import LanguageComponent from '../LanguageComponent';
-import { Context } from '../ContextBtn'
 
 
 function HeroSection() {
-  const [signedIn, setSignedIn] = useState(true)
-  
+
   return (
     <div className='hero-section'>
       <div className='hero-container'>
@@ -20,10 +18,10 @@ function HeroSection() {
               <Link to='/'><img src={Logo} alt="logo" className='logo' /></Link>
               <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <Hide breakpoint='(max-width: 482px)'>
-                   <LanguageComponent />
+                  <LanguageComponent />
                 </Hide>
                 <Link to="/SignInPage" className="btn">
-                { signedIn? 'Sign in' : ' Sign out'}
+                  Sign In
                 </Link>
               </div>
             </div>
@@ -31,8 +29,8 @@ function HeroSection() {
         </div>
       </div>
       <div className='banner'>
-              <HeroText />
-        </div>
+        <HeroText />
+      </div>
     </div>
   )
 }
