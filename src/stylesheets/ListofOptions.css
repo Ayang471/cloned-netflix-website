@@ -195,4 +195,18 @@ align-items: center;
     order: 1;
     margin-bottom: 20px;
   }
+
+  .TV-Section .row .col img{
+    width: 300px;
+}
+
+.watch-everywhere .row .col img{
+    width: 300px;
+}
+.Kids-Profiles .row .col img{
+    width: 300px;
+}
+.download .row .col img{
+    width: 300px;
+}
 }

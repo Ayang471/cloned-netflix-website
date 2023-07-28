@@ -57,3 +57,33 @@
     margin-bottom: 10%;
 }
 }
+
+@media (max-width:391px){
+  .subscription .P2{
+  font-size: 16px;
+
+}
+
+.Form .userEmail{
+    width: 250px;
+    padding: 12px 22px;
+    border-radius: 4px;
+    border: 1px solid #d5d3d3;
+    background-color: rgba(47, 47, 47, 0.6);
+    margin: 0 auto;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+
+.Form .btn{
+    padding: 10px 24px;
+    font-size:16px;
+    margin-top: 6px;
+}
+
+.Form .btn:hover{
+  background-color: rgb(196, 0, 0);
+  color: #fff;
+}
+}
