@@ -30,15 +30,15 @@ function SignInPage() {
             <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
               <Hide breakpoint='(max-width: 482px)'>
                 <LanguageComponent />
-            </Hide>
-                <Link to="/SignInPage" className="btn" >
-              Sign In
-            </Link>
+              </Hide>
+              <Link to="/SignInPage" className="btn" >
+                Sign In
+              </Link>
+            </div>
           </div>
-      </div>
-    </nav>
+        </nav>
       </div >
-    <SignInForm />
+      <SignInForm />
       <SignInFormFooter />
     </div >
   )
